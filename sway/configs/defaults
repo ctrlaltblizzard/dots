@@ -1,0 +1,23 @@
+# \\ Keys for Navigation
+set $up     j
+set $down   k
+set $left   h
+set $right  l
+
+# \\ Default terminal
+set $term foot
+
+# \\ App Launcher
+set $menu tofi-drun | xargs swaymsg exec --
+
+# \\ Browser
+set $browser brave-browser
+
+# \\ File Manager
+set $fm thunar
+
+# \\ Drag Floating Window
+floating_modifier $mod normal
+
+# \\ Set wallpaper
+output * bg $HOME/Pictures/hanako.jpg fill

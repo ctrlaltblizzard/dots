@@ -1,0 +1,10 @@
+# \\ Waybar
+bar {
+  swaybar_command waybar
+}
+
+# \\ Border Color
+client.focused            #74c7ec #74c7ec #000000 #74c7ec #74c7ec 
+client.focused_inactive   #74c7ec #74c7ec #000000 #74c7ec #74c7ec 
+client.unfocused          #a6e3a1 #a6e3a1 #000000 #a6e3a1 #a6e3a1 
+

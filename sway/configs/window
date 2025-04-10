@@ -1,0 +1,54 @@
+# \\ Window Navigation
+  
+  # \\ For keys h , j , k , l
+  bindsym $mod+$up focus up
+  bindsym $mod+$down focus down
+  bindsym $mod+$left focus left
+  bindsym $mod+$right focus right
+ 
+  # \\ Using arrow keys
+  bindsym $mod+Up focus up
+  bindsym $mod+Down focus down
+  bindsym $mod+Left focus left
+  bindsym $mod+Right focus right
+
+  # \\ Swap window position
+  bindsym $mod+Shift+$up move up
+  bindsym $mod+Shift+$down move down
+  bindsym $mod+Shift+$left move left
+  bindsym $mod+Shift+$right move right
+
+  # \\ Using arrow keys
+  bindsym $mod+Shift+Up move up
+  bindsym $mod+Shift+Down move down
+  bindsym $mod+Shift+Left move left
+  bindsym $mod+Shift+Right move right
+  
+  # \\ Switch to fullscreen
+  bindsym $mod+f fullscreen
+
+  # \\ Switch from tiling to float
+  bindsym $mod+Shift+space floating toggle
+
+  # \\ Resizing windows 
+  bindsym $mod+Ctrl+j resize grow height 2 px or 2 ppt
+  bindsym $mod+Ctrl+k resize shrink height 2 px or 2 ppt
+  bindsym $mod+Ctrl+h resize shrink width 2 px or 2 ppt
+  bindsym $mod+Ctrl+l resize grow width 2 px or 2 ppt
+
+  # \\ Using arrow keys
+  bindsym $mod+Ctrl+Up resize shrink height 2 px or 2 ppt
+  bindsym $mod+Ctrl+Down resize grow height 2 px or 2 ppt
+  bindsym $mod+Ctrl+Left resize shrink width 2 px or 2 ppt
+  bindsym $mod+Ctrl+Right resize grow width 2 px or 2 ppt
+
+  # \\ Window padding
+#  titlebar_padding 10
+#  titlebar_border_thickness 10
+
+  # \\ Remove window padding
+  default_border pixel 4px
+
+  # \\ Window Gaps
+  gaps inner 5
+  gaps outer 5

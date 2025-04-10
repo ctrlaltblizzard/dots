@@ -1,0 +1,18 @@
+# \\ Auth Agent
+exec /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
+
+# \\ Wayland Overlay Bar
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+
+# \\ Notification
+exec swaync
+
+# \\ GTK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec hash dbus-update-activation-environment 2>/dev/null && \
+      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+# \\ Clipboard Manager
+exec wl-paste -t text --watch clipman store --no-persist

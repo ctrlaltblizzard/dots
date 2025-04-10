@@ -1,0 +1,17 @@
+# \\ Hide font for window titlebar
+font pango:monospace 0
+
+# \\ Input Configuration
+
+input type:touchpad {
+  tap enabled
+  dwt enabled
+  natural_scroll enabled
+  middle_emulation enabled
+
+}
+
+input * {
+  repeat_rate 50
+  repeat_delay 240
+}

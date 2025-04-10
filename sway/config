@@ -1,0 +1,12 @@
+# \\ Defaults
+  set $mod Mod4
+
+# \\ Source Files
+		include $HOME/.config/sway/configs/keybinds 
+		include $HOME/.config/sway/configs/defaults 
+		include $HOME/.config/sway/configs/autostart 
+		include $HOME/.config/sway/configs/rules
+		include $HOME/.config/sway/configs/input 
+		include $HOME/.config/sway/configs/workspaces 
+		include $HOME/.config/sway/configs/window 
+		include $HOME/.config/sway/configs/theme
