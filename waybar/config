@@ -30,7 +30,7 @@
 	"format": "{icon}",
 	"format-icons": {
       "1": "  ",	// Terminal
-      "2": "  ",	// Browser
+      "2": "  ",	// Browser
       "3": "  ",	// File Manager
       "4": " 󱞎 ",	// Text Editor
       "5": "  ",	// Screen Record
@@ -54,7 +54,10 @@
   },
 
   "sway/window": {
-    "format": "{}"
+    "format": "{}",
+    "rewrite": {
+        "": "If it works, don't touch it.",
+    },
   },
 
   "tray": {
@@ -64,7 +67,7 @@
 
   "clock": {
     "tooltip-format": "{}",
-    "format": "{:  %I:%M:%S %p}", //12 hour format
+    "format": "{:  %I:%M %p}", //12 hour format
     "interval": 1
   },
 
